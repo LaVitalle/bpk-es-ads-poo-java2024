@@ -11,8 +11,10 @@ public class AplicacaoEntradaSaidaDados {
      */
     public static void main(String[] args) {
 
-        String nome = input("Digite o seu nome: ");
-        int idade = inputInt("Digite sua idade: ");
+        IO io = new IO();
+
+        String nome = io.input("Digite o seu nome: ");
+        int idade = io.inputInt("Digite sua idade: ");
 
         /**
          * A variável userInfo é uma string formatada, usando uma sintaxe de bloco de texto (text block) do Java,
@@ -30,31 +32,6 @@ public class AplicacaoEntradaSaidaDados {
     }
 
 
-    /**
-     *
-     * @param msgDialog
-     * @return
-     * Método extraído da refatoração para reaproveitamento no processamento de entrada de dados
-     * informados pelo usuário no terminal.
-     *
-     *
-     */
-    public static String input(String msgDialog){
-        Scanner scanner = new Scanner(System.in);
-        String strPrint = msgDialog.contains(":")? msgDialog: msgDialog + ":";
-        System.out.print(strPrint);
-        return scanner.nextLine();
-    }
 
-    /**
-     * Método para invocar o método input e retornar a informação digitada pelo usuário já
-     * convertida para String
-     * @param msgDialog
-     * @return
-     */
-    public static int inputInt(String msgDialog){
-        String strInput = input(msgDialog);
-        return Integer.parseInt(strInput);
-    }
 
 }
