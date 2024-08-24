@@ -1,27 +1,23 @@
 public class Carro {
-
     public String modelo;
     public String marca;
-    public int ano;
     public String cor;
+    public int ano;
 
-    public Carro() {
-    }
+//    public Carro() {
+//    }
 
-    public Carro(String modelo, String marca, int ano, String cor) {
+    public Carro(String modelo, String marca, String cor, int ano) {
         this.modelo = modelo;
         this.marca = marca;
-        this.ano = ano;
         this.cor = cor;
+        this.ano = ano;
     }
 
     @Override
     public String toString() {
-        return "Carro{" +
-                "modelo='" + modelo + '\'' +
-                ", marca='" + marca + '\'' +
-                ", ano=" + ano +
-                ", cor='" + cor + '\'' +
-                '}';
+        return """
+                """;
+//        return marca + " " + modelo + " " + cor + " " + ano;
     }
 }
