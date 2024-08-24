@@ -1,3 +1,5 @@
+package exercicio01;
+
 public class Livro
 {
 
@@ -15,7 +17,7 @@ public class Livro
    public void abrirLivro()
    {
 
-       System.out.println("Livro " + nome + " foi aberto!!");
+       System.out.println("exercicio01.Livro " + nome + " foi aberto!!");
 
    }
 
